@@ -1,7 +1,7 @@
 import React from 'react';
 //import './App.css';
 import Contact from './components/Contact.js'
-
+import ContactList from './components/ContactList.js'
 
 const jack = {
   
@@ -29,9 +29,8 @@ function App() {
     <div className="App">
       
         
-      <Contact  {...jack} online />
-      <Contact  {...nina} />
-      <Contact  {...markus} online />
+      
+      <ContactList  />
 
   
 
