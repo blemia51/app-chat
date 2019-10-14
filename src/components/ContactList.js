@@ -6,37 +6,48 @@ const user =[
 {
 	name:'Tamara Stanley',
 	avatar:'https://randomuser.me/api/portraits/women/17.jpg',
-	online :true
+	online: true
 }
 ,
 {
 	name:'Bonie Ramos ',
-	avatar:'https://randomuser.me/api/portraits/women/60.jpg'
+	avatar:'https://randomuser.me/api/portraits/women/60.jpg',
+	online: true
 },
 {
 	name:'Flen Ducan',
 	avatar:'https://randomuser.me/api/portraits/men/40.jpg',
-	online : true
+	online: true
+	
 },
 {
 	name:'Vivan Ryan',
-	avatar:'https://randomuser.me/api/portraits/women/31.jpg'
+	avatar:'https://randomuser.me/api/portraits/women/31.jpg',
+	online: true
 },
 {
 	name:'Leah Peterson',
-	avatar:'https://randomuser.me/api/portraits/women/91.jpg'
+	avatar:'https://randomuser.me/api/portraits/women/91.jpg',
+	online: true
 }
 
 ]
 
-const ContactList = () => (
-	
-	<ul>
-	{user.map(user =>(
-		<li className = 'ContactList'>{[Contact(user)]}</li> ))}
 
-	</ul>
+
+	const ContactList = () => (
+		
+		  user.map(user => (
+			
+			<Contact {...user} />
+			
+			 
+			  
 	
-	);
+		  )
+		  )
+	)
+		
+	
 
 	export default ContactList;
